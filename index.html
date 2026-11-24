@@ -1,0 +1,194 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Product Gallery</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <header class="navbar">
+      <div class="logo">🛍️
+        <span class = "logo_name">Mini Shop</span>
+      </div>
+      <div class="header-actions">
+        <span class="cart-icon" role="img" aria-label="Shopping cart, 0 items">
+            <div class="cart">🛒</div>
+          <span class="cart-count">0</span>
+        </span>
+      </div>
+    </header>
+
+    <div class="filters">
+      <input class="search" type="search" placeholder="Search products..." aria-label="Search products">
+      <nav class="category-filters" aria-label="Filter products by category">
+        <button class="filter-button active" type="button" data-category="all" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-category="electronics" aria-pressed="false">Electronics</button>
+        <button class="filter-button" type="button" data-category="fashion" aria-pressed="false">Fashion</button>
+        <button class="filter-button" type="button" data-category="books" aria-pressed="false">Books</button>
+      </nav>
+    </div>
+    <div class="cart-summary">
+        <div class="price_total">
+            <span>Total: </span>
+            <span class="cart-total" id="cart-total">0</span>
+        </div>
+        <button class="clear-cart">Clear cart</button>
+    </div>
+    <main class="grid-container"> 
+        <!-- Project Card 1 --> 
+        <article class="project-card" data-id="headphones" data-price="1290000"> 
+            <div class="card-image-box">
+                <p class="image">🎧</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">ELECTRONICS</div> 
+                    <div class="name">Wireless Headphones</div> 
+                </div>
+                <div class="item-price">
+                    <h2>1.290.000</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+         
+        <!-- Project Card 2 --> 
+        <article class="project-card" data-id="watch" data-price="2490000"> 
+            <div class="card-image-box">
+                <p class="image">⌚</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">ELECTRONICS</div> 
+                    <div class="name">Smart Watch</div> 
+                </div>
+                <div class="item-price">
+                    <h2>2.490.000</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+
+        <!-- Project Card 3 --> 
+        <article class="project-card" data-id="speaker" data-price="890000"> 
+            <div class="card-image-box">
+                <p class="image">🔊</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">ELECTRONICS</div> 
+                    <div class="name">Bluetooth Speaker</div> 
+                </div>
+                <div class="item-price">
+                    <h2>890.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+
+        <!-- Project Card 4 --> 
+        <article class="project-card" data-id="jacket" data-price="750000"> 
+            <div class="card-image-box">
+                <p class="image">🧥</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">Fashion</div> 
+                    <div class="name">Demin Jacket</div> 
+                </div>
+                <div class="item-price">
+                    <h2>750.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+         
+        <!-- Project Card 5 --> 
+         <article class="project-card" data-id="shoes" data-price="1150000"> 
+            <div class="card-image-box">
+                <p class="image">👟</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">Fashion</div> 
+                    <div class="name">Running Shoes</div> 
+                </div>
+                <div class="item-price">
+                    <h2>1.150.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+
+        <!-- Project Card 6 --> 
+        <article class="project-card" data-id="cap" data-price="190000"> 
+            <div class="card-image-box">
+                <p class="image">🧢</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">Fashion</div> 
+                    <div class="name">Baseball Cap</div> 
+                </div>
+                <div class="item-price">
+                    <h2>190.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+
+        <!-- Project Card 7 --> 
+        <article class="project-card" data-id="handbook" data-price="320000"> 
+            <div class="card-image-box">
+                <p class="image">📘</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">Books</div> 
+                    <div class="name">JavaScript Handbook</div> 
+                </div>
+                <div class="item-price">
+                    <h2>320.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+
+        <!-- Project Card 8 --> 
+        <article class="project-card" data-id="sketchbook" data-price="150000"> 
+            <div class="card-image-box">
+                <p class="image">📓</p>
+            </div> 
+            <div class="card-content"> 
+                <div class="item-info">
+                    <div class="category">Books</div> 
+                    <div class="name">Web Design Sketchbook</div> 
+                </div>
+                <div class="item-price">
+                    <h2>150.000 ₫</h2>
+                </div>
+                <button class="btn-more">
+                    <a>Add to Cart</a>
+                </button>             
+            </div> 
+        </article> 
+    </main> 
+    <script src="app.js"></script>
+</body> 
+</html> 
